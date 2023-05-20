@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to fm-code-notes.">
+<Layout title="fm code notes">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1 class="flex flex-row gap-x-2 items-center"> <img src="images/codenotes.svg" alt="" class="rotate-12"> <span class="text-4xl font-mono">fm-code-notes</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -13,23 +13,23 @@ import Card from '../components/Card.astro';
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
-				title="Documentation"
+				title="Css"
 				body="Learn how Astro works and explore the official API docs."
 			/>
 			<Card
 				href="https://astro.build/integrations/"
-				title="Integrations"
+				title="Javascript"
 				body="Supercharge your project with new frameworks and libraries."
 			/>
 			<Card
 				href="https://astro.build/themes/"
-				title="Themes"
+				title="Tailwind"
 				body="Explore a galaxy of community-built starter themes."
 			/>
 			<Card
 				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				title="Git"
+				body="Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. ❤️"
 			/>
 		</ul>
 	</main>
@@ -46,13 +46,7 @@ import Card from '../components/Card.astro';
 		font-weight: 800;
 		margin: 0;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
+	
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
